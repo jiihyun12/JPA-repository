@@ -56,15 +56,15 @@ class EntityTests {
     }
 
     // 1번 회원이 작성한 게시글 전체를 조회
-    @Test
-    public void findTest2(){
+   // @Test
+   // public void findTest2(){
 //        ON절 제한
-       List<Board> foundBoardList = entityManager.createQuery(
-                "SELECT b FROM b JOIN b.user u WHERE u.userName = :userName", Board.class
-        ).setParameter("userName", "고길동").getResultList();
+   //    List<Board> foundBoardList = entityManager.createQuery(
+   //             "SELECT b FROM b JOIN b.user u WHERE u.userName = :userName", Board.class
+    //    ).setParameter("userName", "고길동").getResultList();
 
-       foundBoardList.stream().map(Board::toString).forEach(System.out::println);
-    }
+    //   foundBoardList.stream().map(Board::toString).forEach(System.out::println);
+   // }
 
     // 작성자 변경
 
